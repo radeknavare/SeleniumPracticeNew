@@ -14,4 +14,8 @@ public class TestNg {
 	{
 		System.out.println("World");
 	}
+	public void World1()
+	{
+		System.out.println("World1");
+	}
 }
