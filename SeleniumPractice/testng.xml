@@ -2,10 +2,23 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
   <test thread-count="5" name="Test">
+  
+  	<groups>
+  		<run>
+			<include name="table"></include>  		
+  		</run>
+  	</groups>
     <classes>
       <class name="com.seleniumpractice.TestNg">
       	<methods>
-      		<exclude name="display"></exclude>
+      		<include name="display"></include>
+      	</methods>
+      </class>
+      <class name="com.seleniumpractice.TableHandling">
+      	<methods>
+      		<exclude name="initialize">
+      		
+      		</exclude>
       	</methods>
       </class>
     </classes>
