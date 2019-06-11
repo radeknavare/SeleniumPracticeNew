@@ -1,6 +1,7 @@
 package com.seleniumpractice;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -23,7 +24,7 @@ public class TableHandling {
 	public void getTableContents()
 	{
 		chromeDriver.get("http://demo.guru99.com/test/web-table-element.php");
-		
+		chromeDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		List<WebElement> tableCols = chromeDriver.findElements(By.xpath("//*[@id='leftcontainer']/table/thead/tr/th"));
 		System.out.println(tableCols.size());
 		List<WebElement> tableRows = chromeDriver.findElements(By.xpath("//*[@id='leftcontainer']/table/tbody/tr"));
