@@ -15,11 +15,6 @@
       	</methods>
       </class>
       <class name="com.seleniumpractice.TableHandling">
-      	<methods>
-      		<include name="initialize">
-      		
-      		</include>
-      	</methods>
       </class>
     </classes>
   </test> <!-- Test -->
