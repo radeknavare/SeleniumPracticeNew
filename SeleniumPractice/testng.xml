@@ -16,9 +16,9 @@
       </class>
       <class name="com.seleniumpractice.TableHandling">
       	<methods>
-      		<exclude name="initialize">
+      		<include name="initialize">
       		
-      		</exclude>
+      		</include>
       	</methods>
       </class>
     </classes>
