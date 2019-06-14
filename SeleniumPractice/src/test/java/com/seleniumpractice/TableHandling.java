@@ -22,7 +22,7 @@ public class TableHandling {
 
 	@Test(groups="table")
 	public void getTableContents()
-	{
+	{ 
 		chromeDriver.get("http://demo.guru99.com/test/web-table-element.php");
 		chromeDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		List<WebElement> tableCols = chromeDriver.findElements(By.xpath("//*[@id='leftcontainer']/table/thead/tr/th"));
